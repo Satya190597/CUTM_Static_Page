@@ -1,0 +1,147 @@
+<html>
+	<head>
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<!-- Custom style to overide bootstrap predifned style -->
+		<style type="text/css">
+			.dropdown-item:hover,
+			.dropdown-item:focus
+			{
+				background: rgba(0, 0, 0, 0.5);
+			}
+		</style>
+		<!-- Script to change heading -->
+		<script>
+			function setValue(heading)
+			{
+				document.getElementById("heading").innerHTML = heading;
+			}
+		</script>
+	</head>
+	<body>
+		<!-- Background Video -->
+		<video autoplay muted loop id="myVideo" style="position: fixed;bottom: 0;left: 0;width: 100%">
+  			<source src="background/video_two.mp4" type="video/mp4">
+		</video>
+		<div>
+			<!-- Header -->
+			<header style="background: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			top:0px;
+			left:0px;
+			width:100%">	
+				<p style="float: left;
+				text-align: left;
+				font-style: italic;
+				font-size: 12px;
+				color:white;
+				margin:2%">
+					<image src="icons/cutm.png" width="85px" height="100px" style="display: inline-block;"/>
+					<br>
+					<small>Shaping Lives...<br>Empowering Communities...</small>
+				</p>
+				<p style="font-size: 25px;display: inline-block;margin-top: 2%;color: white">
+				<strong>
+					Centurion University Of Technology And Management<br>Assessment Management System
+					<br>
+					<small style="color:yellow" id="heading">Dashboard</small>
+				</strong>
+				</p>
+			</header>
+			<center>
+				<!-- Content -->
+				<div style="display:block;
+				padding:30px;
+				background: rgba(0, 0, 0, 0.5);
+				position: absolute;
+				left:25%;
+				border-radius: 5px;
+				top:40%">
+			  		<div class="dropdown" style="display:inline-block;">
+		    			<button type="button" 
+		    			class="btn btn-primary dropdown-toggle" 
+		    			data-toggle="dropdown" 
+		    			onclick="setValue('MIS');">
+		      				MIS
+		    			</button>
+					    <div class="dropdown-menu" style="background: rgba(0, 0, 0, 0.5)">
+					      <b><a class="dropdown-item" href="#" style="color:white">A</a></b>
+					      <b><a class="dropdown-item" href="#" style="color:white">B</a></b>
+					      <b><a class="dropdown-item" href="#" style="color:white">C</a></b>
+					    </div>
+	  				</div>
+	  				&nbsp;&nbsp;
+	  				<div class="dropdown" style="display:inline-block;">
+	  					<button type="button" 
+	  					class="btn btn-primary dropdown-toggle" 
+	  					data-toggle="dropdown"
+	  					onclick="setValue('Certificate');">
+	  						Certificate
+						</button>
+	  					<div class="dropdown-menu" style="background: rgba(0, 0, 0, 0.5)">
+	  						<b><a class="dropdown-item" href="#" style="color:white">A</a></b>
+	  						<b><a class="dropdown-item" href="#" style="color:white">B</a></b>
+	  						<b><a class="dropdown-item" href="#" style="color:white">C</a></b>
+						</div>
+					</div>
+					&nbsp;&nbsp;
+					<div class="dropdown" style="display:inline-block;">
+						<button type="button" 
+						class="btn btn-primary dropdown-toggle" 
+						data-toggle="dropdown"
+						onclick="setValue('Assessor');">
+							Assessor
+						</button>
+						<div class="dropdown-menu" style="background: rgba(0, 0, 0, 0.5)">
+							<b><a class="dropdown-item" href="#" style="color:white">KYC</a></b>
+							<b><a class="dropdown-item" href="#" style="color:white">Assessor Assignment</a></b>
+							<b><a class="dropdown-item" href="#" style="color:white">Claim Upload</a></b>
+							<b><a class="dropdown-item" href="#" style="color:white">View Claim</a></b>
+							<b><a class="dropdown-item" href="#" style="color:white">Track Claim</a></b>
+						</div>
+					</div>
+					&nbsp;&nbsp;
+					<div class="dropdown" style="display:inline-block;">
+						<button type="button" 
+						class="btn btn-primary dropdown-toggle" 
+						data-toggle="dropdown"
+						onclick="setValue('Training Patner');">
+							Training Patner
+						</button>
+						<div class="dropdown-menu" style="background: rgba(0, 0, 0, 0.5)">
+							<b><a class="dropdown-item" href="#" style="color:white">One</a></b>
+							<b><a class="dropdown-item" href="#" style="color:white">Two</a></b>
+							<b><a class="dropdown-item" href="#" style="color:white">Three</a></b>
+							<b><a class="dropdown-item" href="#" style="color:white">Four</a></b>
+						</div>
+					</div>
+					&nbsp;&nbsp;
+					<div class="dropdown" style="display:inline-block;">
+						<button type="button" 
+						class="btn btn-primary dropdown-toggle" 
+						data-toggle="dropdown"
+						onclick="setValue('Competency');">
+							Competency
+						</button>
+						<div class="dropdown-menu" style="background: rgba(0, 0, 0, 0.5)">
+							<b><a class="dropdown-item" href="#" style="color:white">One</a></b>
+							<b><a class="dropdown-item" href="#" style="color:white">Two</a></b>
+							<b><a class="dropdown-item" href="#" style="color:white">Three</a></b>
+						</div>
+					</div>
+				</div>
+				<!-- Footer -->
+				<footer style="background: rgba(0, 0, 0, 0.5);
+				bottom:0;
+				position: absolute;
+				width:100%;
+				padding:8px">
+					<h5 style="color:white">&copy;&nbsp;&nbsp;cutm.ams.2018</h5>
+				</footer>
+	  		</center>
+		</div>
+	</body>
+</html>

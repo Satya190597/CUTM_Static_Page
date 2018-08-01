@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title>Welcome User</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<script src="javascript/login.js"></script>
+	</head>
+	<body>
+		<!-- Background video start -->
+		<video autoplay muted loop id="myVideo" style="position: fixed;bottom: 0;left: 0;width: 100%">
+  			<source src="background/video_two.mp4" type="video/mp4">
+		</video>
+		<!-- Background video end -->
+		<div>
+			<!-- Header start -->
+			<header style="background: rgba(0, 0, 0, 0.5);position: absolute;top:0px;left:0px;width:100%">	
+				<p style="float: left;
+				text-align: left;
+				font-style: italic;
+				font-size: 12px;
+				color:white;
+				margin:2%">
+					<image src="icons/cutm.png" width="85px" height="100px" style="display: inline-block;"/>
+					<br>
+					<small>Shaping Lives...<br>Empowering Communities...</small>
+				</p>
+				<p style="font-size: 25px;
+				display: inline-block;
+				margin-top: 2%;
+				color: white">
+				<strong>
+					Centurion University Of Technology And Management<br>Assessment Management System
+					<br>
+					<small style="color:yellow">Welcome Users</small>
+				</strong>
+				</p>
+			</header>
+			<!-- Header Ends -->
+			<center>
+				<!-- Contents -->
+				<div style="display:block;padding:30px;background: rgba(0, 0, 0, 0.5);position: absolute;left:33%;border-radius: 5px;top:30%;color:white">
+			  		<form>
+			  			<label style="float: left">
+			  				<b>Role</b>
+			  			</label><br>
+			  			<!-- Radio Buttons -->
+			  			<input type="radio" 
+			  			value="admin" 
+			  			name="role" 
+			  			selected="true" 
+			  			checked="checked" 
+			  			id="admin"/>Admin&nbsp;
+			  			<input type="radio" 
+			  			value="accessing" 
+			  			name="role" 
+			  			id="accessing"/>Accessing Body&nbsp;
+			  			<input type="radio" 
+			  			value="training" 
+			  			name="role" 
+			  			id="training"/>Training Patner&nbsp;
+			  			<input type="radio" 
+			  			value="assessor" 
+			  			name="role" 
+			  			id="assessor"/>Assessor
+			  			<label style="float: left">
+			  				<b>Username</b>
+			  			</label><br><br>
+
+			  			<!-- Input Types -->
+
+			  			<input type="text" 
+			  			id="username" 
+			  			class="form-control" 
+			  			style="width:70%;float: left" 
+			  			required/><br><br>
+			  			<label style="float: left">
+			  				<b>Password</b>
+			  			</label><br>
+			  			<input type="password" 
+			  			id="password" 
+			  			class="form form-control"
+			  			style="width:70%;float:left" 
+			  			required/><br><br>
+
+			  			<!-- Buttons -->
+			  			<input type="button" 
+			  			value="Login" 
+			  			class="btn btn-success" 
+			  			style="float: left" 
+			  			onclick="login();"/>
+		  			</form>
+				</div>
+				<!-- Footer start -->
+				<footer style="background: rgba(0, 0, 0, 0.5);
+				bottom:0;
+				position: absolute;
+				width:100%;
+				padding:8px">
+					<h5 style="color:white">&copy;&nbsp;&nbsp;cutm.ams.2018</h5>
+				</footer>
+				<!-- Footer Ends -->
+	  		</center>
+		</div>
+	</body>
+</html>
